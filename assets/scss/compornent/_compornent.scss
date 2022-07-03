@@ -1,0 +1,16 @@
+.page {
+    &--center {
+        text-align: center;
+    }
+    &__ttl {
+        display: inline-block;
+        font-size: 48px;
+        span {
+            display: block;
+            margin: 30px auto 0;
+            width: 50px;
+            height: 3px;
+            background-color: $blue;
+        }
+    }
+}

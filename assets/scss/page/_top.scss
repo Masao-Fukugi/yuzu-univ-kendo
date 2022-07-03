@@ -1,0 +1,230 @@
+.header {
+    padding: 15px 0 30px;
+    width: 100vw;
+    background-color: $orange;
+    border: solid 10px $blue;
+    box-sizing: border-box;
+    &__box {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1180px;
+    }
+    &__ttl {
+        text-align: center;
+        font-family: shinryu, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    &__link {
+        color: $blue;
+        font-size: 60px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__nav {
+        margin-top: 45px;
+    } 
+    &__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__list {
+        a {
+            color: #fff;
+            font-size: 30px;
+            &:hover {
+                color: $blue;
+            }    
+        }
+    }
+}
+.icon {
+    &__menu {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 200px;
+    }
+    &__list {
+        width: 50px;
+    }
+}
+.pc-on {
+    @include sp {
+        display: none;
+    }
+}
+
+.sp-on {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+#top {
+    .fv {
+        width: 100vw;
+        img {
+            width: 100%;
+            height: calc(100vh - 200px);
+            object-fit: cover;
+        }
+    }
+    .wrap {
+        background: linear-gradient(#fff, $rgbOrange);
+    }
+    .block {
+        padding: 70px 0 120px;
+        margin: 0 auto;
+        max-width: 1200px;
+        &:last-child {
+            padding-bottom: 70px;
+        }
+    }
+    .topic {
+        &__list {
+            margin-top: 50px;
+        }
+        &__link {
+            color: #333;
+            time {
+                font-size: 16px;
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        &__txt {
+            display: block;
+            margin-top: 30px;
+            span {
+                display: block;
+                margin-top: 10px;
+                width: 500px;
+                height: 1px;
+                background-color: #333;
+            }
+        }
+    }
+    .result {
+        padding: 30px 0;
+        margin: 50px auto 0;
+        width: 500px;
+        background-color: #fff;
+        border: solid 5px $blue;
+        border-radius: 10px;
+        &__ttl {
+            color: $blue;
+            text-align: center;
+            font-size: 36px;
+            span {
+                display: block;
+                margin-top: 50px;
+                color: $blue;
+                font-size: 36px;
+            }
+        }
+        &__menu {
+            margin-top: 50px;
+        }
+        &__list {
+            margin-top: 30px;
+            dl {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 300px;
+            }
+        }
+    }
+}
+
+.slide-items {
+    margin: 50px auto 0;
+    width: 1000px!important;
+
+}
+.slick-arrow:before{
+    content:""!important;
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slick-next {
+    right: -80px!important;
+    display: block;
+    width: 50px!important;
+    height: 50px!important;
+    &::before {
+        background: url(../img/right_arrow.png)!important;
+        background-size: 50px!important;    
+    }
+}
+.slick-prev {
+    left: -80px!important;
+    display: block;
+    width: 50px!important;
+    height: 50px!important;
+    &::before {
+        background: url(../img/left_arrow.png)!important;
+        background-size: 50px!important;    
+    }
+
+}
+
+.footer {
+    width: 100vw;
+    background-color: $blue;
+    &__box {
+        padding: 30px 0;
+        margin: 0 auto;
+        max-width: 1180px;
+    }
+    &__ttl {
+        font-family: shinryu, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        a {
+            color: #fff;
+            font-size: 30px;
+            &:hover {
+                opacity: 0.6;
+            }    
+        }
+    }
+    &__nav {
+        margin-top: 30px;
+    }
+    &__list {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-size: 16px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__copy {
+        margin-top: 30px;
+        text-align: center;
+        small {
+            color: #fff;
+            font-size: 16px;
+        }    
+    }
+}
