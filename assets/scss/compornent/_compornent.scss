@@ -19,6 +19,7 @@
     &__ttl {
         display: inline-block;
         font-size: 48px;
+        font-weight: bold;
         span {
             display: block;
             margin: 30px auto 0;
@@ -26,6 +27,12 @@
             height: 3px;
             background-color: $blue;
         }
+    }
+    &__sbttl {
+        margin-top: 50px;
+        color: $blue;
+        font-size: 36px;
+        font-weight: bold;
     }
 }
 .topic {

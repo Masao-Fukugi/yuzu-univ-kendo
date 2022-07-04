@@ -1,0 +1,22 @@
+#result {
+    .result {
+        &__menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 30px auto 0;
+            width: 500px;
+            background-color: rgba(246, 173, 73,0.2);
+            border: solid 5px $blue;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        &__list {
+            margin-top: 30px;
+            &:nth-child(-n+2) {
+                margin: 0;
+            }
+        }
+    }
+}
