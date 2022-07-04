@@ -1,0 +1,25 @@
+#single-topic {
+    .topic {
+        &__ttl {
+            text-align: center;
+            font-size: 48px;
+            span {
+                display: block;
+                margin-top: 30px;
+                text-align: right;
+            }
+        }
+        &__photo {
+            margin: 50px auto 0;
+            width: 800px;
+        }
+        article {
+            margin: 50px auto 0;
+            width: 1000px;
+            text-align: justify;
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
