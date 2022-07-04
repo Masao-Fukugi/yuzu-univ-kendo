@@ -3,12 +3,14 @@
         display: none;
     }
 }
-
 .sp-on {
     display: none;
     @include sp {
         display: block;
     }
+}
+.wrap {
+    background: linear-gradient(#fff, $rgbOrange);
 }
 .page {
     &--center {
