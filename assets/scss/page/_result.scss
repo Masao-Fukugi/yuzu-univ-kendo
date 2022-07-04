@@ -17,6 +17,12 @@
             &:nth-child(-n+2) {
                 margin: 0;
             }
+            a {
+                transition: 0.3s;
+                &:hover {
+                    color: $orange;
+                }
+            }
         }
     }
 }

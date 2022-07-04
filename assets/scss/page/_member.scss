@@ -1,0 +1,26 @@
+#member {
+    .member {
+        &__menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &__list {
+            margin: 50px calc(200px / 3) 0 0;
+            width: 250px;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            a {
+                transition: 0.3s;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        &__name {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}
