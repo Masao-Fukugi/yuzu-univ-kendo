@@ -1,3 +1,15 @@
+.pc-on {
+    @include sp {
+        display: none;
+    }
+}
+
+.sp-on {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
 .page {
     &--center {
         text-align: center;
