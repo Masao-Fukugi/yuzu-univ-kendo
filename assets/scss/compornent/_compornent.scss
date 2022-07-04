@@ -28,3 +28,30 @@
         }
     }
 }
+.topic {
+    &__list {
+        margin-top: 50px;
+    }
+    &__link {
+        display: inline-block;
+        width: 500px;
+        color: #333;
+        time {
+            font-size: 16px;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__txt {
+        display: block;
+        margin-top: 30px;
+        span {
+            display: block;
+            margin-top: 10px;
+            width: 500px;
+            height: 1px;
+            background-color: #333;
+        }
+    }
+}

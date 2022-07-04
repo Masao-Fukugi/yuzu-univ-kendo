@@ -1,0 +1,24 @@
+.breadcrumb {
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto 0;
+        max-width: 1200px;
+    }
+    &__list {
+        margin-right: 8px;
+        font-size: 16px;
+        &::after {
+            content: ">";
+            margin-left: 8px;
+        }
+        &:last-child {
+            &::after {
+                content: "";
+            }
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+}
