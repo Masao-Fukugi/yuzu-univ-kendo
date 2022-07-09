@@ -906,13 +906,13 @@ img {
   background-color: #333;
 }
 
-.main {
+.area {
   padding: 70px 0;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.main::after {
+.area::after {
   content: "";
   display: block;
   clear: both;
