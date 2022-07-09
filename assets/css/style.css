@@ -931,30 +931,35 @@ img {
   max-width: 500px;
 }
 
-table {
+.profile {
   float: right;
   margin-top: 50px;
   max-width: 500px;
 }
 
-table tr {
+.profile__row {
   border-bottom: solid 1px #333;
 }
 
-table tr th {
+.profile__ttl {
   padding: 30px 0 10px;
   width: 120px;
   vertical-align: top;
   font-weight: bold;
 }
 
-table tr td {
+.profile__ttl--first {
+  padding: 0 0 10px;
+  font-weight: bold;
+}
+
+.profile__txt {
   display: block;
   padding: 30px 0 10px;
 }
 
-table tr .table-first {
-  padding-top: 0;
+.profile__txt--first {
+  padding: 0 0 10px;
 }
 
 #top .fv {
