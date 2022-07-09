@@ -1131,11 +1131,6 @@ img {
   float: right;
 }
 
-#result .result__list a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 #result .result__list a:hover {
   color: #F6AD49;
 }
@@ -1185,12 +1180,11 @@ img {
 }
 
 #access .access__txt a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  text-decoration: underline;
 }
 
 #access .access__txt a:hover {
-  opacity: 0.6;
+  color: #F6AD49;
 }
 
 #contact table {
