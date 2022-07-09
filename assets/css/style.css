@@ -1196,10 +1196,34 @@ table tr .table-first {
           box-sizing: border-box;
 }
 
+#contact table tr {
+  border: none;
+}
+
 #contact table tr th {
   padding: 20px 0;
   width: 200px;
+  border-right: solid 5px #202F55;
+  border-bottom: solid 5px #202F55;
   text-align: center;
   vertical-align: top;
+}
+
+#contact table tr td {
+  padding: 20px;
+  border-bottom: solid 5px #202F55;
+}
+
+#contact table tr:last-of-type th {
+  border-bottom: none;
+}
+
+#contact table tr:last-of-type td {
+  height: 350px;
+  border-bottom: none;
+}
+
+#contact .button {
+  margin: 50px auto 0;
 }
 /*# sourceMappingURL=style.css.map */

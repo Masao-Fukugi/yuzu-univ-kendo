@@ -9,12 +9,31 @@
         border-collapse: separate;
         box-sizing: border-box;
         tr {
+            border: none;
             th {
                 padding: 20px 0;
                 width: 200px;
+                border-right: solid 5px $blue;
+                border-bottom: solid 5px $blue;
                 text-align: center;
                 vertical-align: top;
             }
+            td {
+                padding: 20px;
+                border-bottom: solid 5px $blue;
+            }
+            &:last-of-type {
+                th {
+                    border-bottom: none;
+                }
+                td {
+                    height: 350px;
+                    border-bottom: none;
+                }
+            }
         }
+    }
+    .button {
+        margin: 50px auto 0;
     }
 }
