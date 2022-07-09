@@ -5,6 +5,12 @@
         &__txt {
             margin-top: 30px;
             line-height: 41px;
+            a {
+                transition: 0.3s;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
         }
     }
 }

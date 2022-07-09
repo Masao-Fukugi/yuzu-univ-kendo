@@ -1087,13 +1087,13 @@ img {
   width: 800px;
 }
 
-#single-topic .main article {
+#single-topic .area article {
   margin: 50px auto 0;
   width: 1000px;
   text-align: justify;
 }
 
-#single-topic .main article p {
+#single-topic .area article p {
   margin-top: 30px;
 }
 
@@ -1178,6 +1178,15 @@ img {
 #access .access__txt {
   margin-top: 30px;
   line-height: 41px;
+}
+
+#access .access__txt a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#access .access__txt a:hover {
+  opacity: 0.6;
 }
 
 #contact table {
