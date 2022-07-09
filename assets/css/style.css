@@ -1098,17 +1098,6 @@ img {
 }
 
 #result .result__menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 20px;
   margin: 30px auto 0;
   width: 500px;
@@ -1119,12 +1108,27 @@ img {
           box-sizing: border-box;
 }
 
+#result .result__menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #result .result__list {
   margin-top: 30px;
 }
 
 #result .result__list:nth-child(-n+2) {
   margin: 0;
+}
+
+#result .result__list:nth-child(1), #result .result__list:nth-child(3), #result .result__list:nth-child(5), #result .result__list:nth-child(6) {
+  float: left;
+  clear: left;
+}
+
+#result .result__list:nth-child(2), #result .result__list:nth-child(4), #result .result__list:nth-child(7) {
+  float: right;
 }
 
 #result .result__list a {

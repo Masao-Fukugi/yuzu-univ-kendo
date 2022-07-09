@@ -1,9 +1,6 @@
 #result {
     .result {
         &__menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             padding: 20px;
             margin: 30px auto 0;
             width: 500px;
@@ -11,11 +8,23 @@
             border: solid 5px $blue;
             border-radius: 10px;
             box-sizing: border-box;
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
         }
         &__list {
             margin-top: 30px;
             &:nth-child(-n+2) {
                 margin: 0;
+            }
+            &:nth-child(1),&:nth-child(3),&:nth-child(5),&:nth-child(6) {
+                float: left;
+                clear: left;
+            }
+            &:nth-child(2),&:nth-child(4),&:nth-child(7) {
+                float: right;
             }
             a {
                 transition: 0.3s;
