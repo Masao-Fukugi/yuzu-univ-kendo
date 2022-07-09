@@ -824,15 +824,6 @@ img {
   font-size: 16px;
 }
 
-.breadcrumb__list::after {
-  content: ">";
-  margin-left: 8px;
-}
-
-.breadcrumb__list:last-child::after {
-  content: "";
-}
-
 .breadcrumb__list a {
   font-size: 16px;
 }
