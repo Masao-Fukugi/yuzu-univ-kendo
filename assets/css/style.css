@@ -769,12 +769,12 @@ img {
   opacity: 0.6;
 }
 
-.footer__copy {
+.footer__txt {
   margin-top: 30px;
   text-align: center;
 }
 
-.footer__copy small {
+.footer__txt small {
   color: #fff;
   font-size: 16px;
 }
@@ -976,13 +976,13 @@ table tr .table-first {
      object-fit: cover;
 }
 
-#top .top {
+#top .area {
   padding: 70px 0 120px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-#top .top:last-child {
+#top .area:last-child {
   padding-bottom: 70px;
 }
 
@@ -1005,7 +1005,7 @@ table tr .table-first {
   display: block;
   margin-top: 50px;
   color: #202F55;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 #top .result__menu {
