@@ -98,13 +98,11 @@ table {
             font-weight: bold;
         }
         td {
+            display: block;
             padding: 30px 0 10px;
         }
         .table-first {
             padding-top: 0;
-        }
-        .lineSpace {
-
         }
     }
 }
