@@ -915,13 +915,13 @@ img {
   background-color: #333;
 }
 
-.topic {
+.main {
   padding: 70px 0;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.topic::after {
+.main::after {
   content: "";
   display: block;
   clear: both;
@@ -937,13 +937,13 @@ img {
 .member__photo {
   float: left;
   margin-top: 50px;
-  width: 500px;
+  max-width: 500px;
 }
 
 table {
   float: right;
   margin-top: 50px;
-  width: 500px;
+  max-width: 500px;
 }
 
 table tr {
@@ -1091,13 +1091,13 @@ table tr .table-first {
   width: 800px;
 }
 
-#single-topic .topic article {
+#single-topic .main article {
   margin: 50px auto 0;
   width: 1000px;
   text-align: justify;
 }
 
-#single-topic .topic article p {
+#single-topic .main article p {
   margin-top: 30px;
 }
 
@@ -1176,7 +1176,7 @@ table tr .table-first {
 
 #access .access {
   margin: 50px auto 0;
-  width: 800px;
+  max-width: 800px;
 }
 
 #access .access__txt {
