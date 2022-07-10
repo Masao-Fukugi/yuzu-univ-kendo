@@ -100,8 +100,18 @@
             img {
                 display: inline-block;
                 margin-right: 30px;
-                width: 30px;
+                width: 24px;
             }
         }
     }
+}
+.hamburger-on {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 25px;
+    left: 50%;
+    z-index: 100;
+    display: flex;
+    transform: translateX(-50%);
 }

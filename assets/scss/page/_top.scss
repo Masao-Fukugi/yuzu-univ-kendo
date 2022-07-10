@@ -19,6 +19,8 @@
         right: 0;
         width: 250px;
         @include sp {
+            top: 60px;
+            right: 20px;
             width: 100px;
         }
     }

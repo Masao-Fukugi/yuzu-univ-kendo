@@ -45,28 +45,3 @@
         }
     }
 }
-.mask-on {
-    z-index: -10000;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-}
-.mask-on.open {
-    z-index: 10000;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
-}
-.hamburger-on {
-    display: none;
-}
-.hamburger-on.open {
-    position: fixed;
-    top: auto;
-    right: auto;
-    bottom: 25px;
-    left: 50%;
-    z-index: 100;
-    display: flex;
-    transform: translateX(-50%);
-}

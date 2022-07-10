@@ -54,7 +54,11 @@
         </div>
     </header>
     <main id="top">
-        <figure class="fv"><img src="/assets/img/fv.jpg" alt="fv"></figure>
+        <picture class="fv">
+            <source srcset="/assets/img/fv.jpg" media="(min-width: 1200px)"/>
+            <source srcset="/assets/img/fv.jpg" media="(min-width: 768px)"/>
+            <img src="/assets/img/fv-sp.jpg" alt="fv">
+        </picture>
         <section class="wrap">
             <div class="area">
                 <h2 class="page__ttl">お知らせ<span></span></h2>

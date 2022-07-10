@@ -792,7 +792,22 @@ img {
 .mask__list a img {
   display: inline-block;
   margin-right: 30px;
-  width: 30px;
+  width: 24px;
+}
+
+.hamburger-on {
+  position: fixed;
+  top: auto;
+  right: auto;
+  bottom: 25px;
+  left: 50%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .footer {
@@ -1174,6 +1189,8 @@ main {
 
 @media screen and (max-width: 767px) {
   #top .silhouette {
+    top: 60px;
+    right: 20px;
     width: 100px;
   }
 }
@@ -1670,40 +1687,5 @@ main {
   top: 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.mask-on {
-  z-index: -10000;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.mask-on.open {
-  z-index: 10000;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.hamburger-on {
-  display: none;
-}
-
-.hamburger-on.open {
-  position: fixed;
-  top: auto;
-  right: auto;
-  bottom: 25px;
-  left: 50%;
-  z-index: 100;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */
