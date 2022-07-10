@@ -7,7 +7,7 @@
         }
         &__list {
             margin: 50px calc(200px / 3) 0 0;
-            width: 250px;
+            max-width: 250px;
             &:nth-child(4n) {
                 margin-right: 0;
             }
@@ -16,6 +16,10 @@
                 &:hover {
                     opacity: 0.6;
                 }
+            }
+            @include medium {
+                margin-right: calc(100vw * (200 / 3) / 1200 * 0.9);
+                width: calc(100vw * 250 / 1200 * 0.9);
             }
         }
         &__name {

@@ -4,6 +4,9 @@
         flex-wrap: wrap;
         margin: 10px auto 0;
         max-width: 1200px;
+        @include medium {
+            width: 90%;
+        }
     }
     &__list {
         margin-right: 8px;

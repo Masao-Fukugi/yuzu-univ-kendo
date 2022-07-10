@@ -7,11 +7,17 @@
                 display: block;
                 margin-top: 30px;
                 text-align: right;
+                @include medium {
+                    margin-right: 5%;
+                }
             }
         }
         &__photo {
             margin: 50px auto 0;
             max-width: 800px;
+            @include medium {
+                width: 90%;
+            }
         }
     }
     .area {
@@ -19,6 +25,9 @@
             margin: 50px auto 0;
             max-width: 1000px;
             text-align: justify;
+            @include medium {
+                width: 90%;
+            }
             p {
                 margin-top: 30px;
                 line-height: 2;

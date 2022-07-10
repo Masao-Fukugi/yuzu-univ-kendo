@@ -1,19 +1,31 @@
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
     padding: 15px 0 30px;
     width: 100vw;
     background-color: $orange;
     border: solid 10px $blue;
     box-sizing: border-box;
+    @include sp {
+        padding: 26px 0;
+    }
     &__box {
         position: relative;
         margin: 0 auto;
         max-width: 1180px;
+        @include medium {
+            width: 90%;
+        }
     }
     &__ttl {
         text-align: center;
         font-family: shinryu, sans-serif;
         font-weight: 400;
         font-style: normal;
+        @include sp {
+            text-align: left;
+        }
     }
     &__link {
         color: $blue;
@@ -21,9 +33,16 @@
         &:hover {
             opacity: 0.6;
         }
+        @include sp {
+            font-size: 28px;
+        }
     }
     &__nav {
         margin-top: 45px;
+        @include sp {
+            position: static;
+            display: none;
+        }
     } 
     &__menu {
         display: flex;
@@ -50,8 +69,12 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 200px;
-    }
+
+ }
     &__list {
         width: 50px;
+        @include sp {
+            width: 30px;
+        }
     }
 }
