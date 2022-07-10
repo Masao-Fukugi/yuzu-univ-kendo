@@ -1290,12 +1290,20 @@ main {
 #single-topic .topic__ttl {
   text-align: center;
   font-size: 48px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  #single-topic .topic__ttl {
+    font-size: 28px;
+  }
 }
 
 #single-topic .topic__ttl span {
   display: block;
   margin-top: 30px;
   text-align: right;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1199px) {

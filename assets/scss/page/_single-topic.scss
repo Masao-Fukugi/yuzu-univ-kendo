@@ -3,10 +3,15 @@
         &__ttl {
             text-align: center;
             font-size: 48px;
+            font-weight: bold;
+            @include sp {
+                font-size: 28px;
+            }
             span {
                 display: block;
                 margin-top: 30px;
                 text-align: right;
+                font-weight: normal;
                 @include medium {
                     margin-right: 5%;
                 }
