@@ -1427,6 +1427,16 @@ main {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #member .member__list {
+    margin: 30px calc(100% - 300px) 0 0;
+    width: 150px;
+  }
+  #member .member__list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 #member .member__name {
   margin-top: 30px;
   text-align: center;

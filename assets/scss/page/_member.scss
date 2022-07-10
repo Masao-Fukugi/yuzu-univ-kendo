@@ -21,6 +21,13 @@
                 margin-right: calc(100vw * (200 / 3) / 1200 * 0.9);
                 width: calc(100vw * 250 / 1200 * 0.9);
             }
+            @include sp {
+                margin: 30px calc(100% - 300px) 0 0;
+                width: 150px;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
         }
         &__name {
             margin-top: 30px;
