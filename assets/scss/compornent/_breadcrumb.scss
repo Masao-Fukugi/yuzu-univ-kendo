@@ -14,5 +14,11 @@
         a {
             font-size: 16px;
         }
+        @include sp {
+            font-size: 12px;
+            a {
+                font-size: 12px;
+            }
+        }
     }
 }

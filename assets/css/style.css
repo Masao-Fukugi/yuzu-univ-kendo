@@ -762,6 +762,39 @@ img {
   }
 }
 
+.mask {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: rgba(32, 47, 85, 0.7);
+}
+
+.mask__nav {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mask__list {
+  margin-top: 50px;
+}
+
+.mask__list a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.mask__list a:hover {
+  color: #F6AD49;
+}
+
+.mask__list a img {
+  display: inline-block;
+  margin-right: 30px;
+  width: 30px;
+}
+
 .footer {
   width: 100vw;
   background-color: #202F55;
@@ -884,6 +917,15 @@ img {
 
 .breadcrumb__list a {
   font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb__list {
+    font-size: 12px;
+  }
+  .breadcrumb__list a {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1628,35 +1670,6 @@ main {
   top: 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.mask {
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 100vw;
-  height: calc(100vh - 100px);
-  background-color: rgba(32, 47, 85, 0.7);
-}
-
-.mask__nav {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.mask__list {
-  margin-top: 50px;
-}
-
-.mask__list a {
-  color: #fff;
-  font-size: 24px;
-}
-
-.mask__list a img {
-  display: inline-block;
-  margin-right: 30px;
-  width: 30px;
 }
 
 .mask-on {
