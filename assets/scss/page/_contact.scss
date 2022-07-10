@@ -8,6 +8,9 @@
         border-radius: 10px;
         border-collapse: separate;
         box-sizing: border-box;
+        @include sp {
+            width: 100%;
+        }
         tr {
             border: none;
             th {
@@ -17,10 +20,23 @@
                 border-bottom: solid 5px $blue;
                 text-align: center;
                 vertical-align: top;
+                @include sp {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                }
             }
             td {
-                padding: 20px;
+                padding: 10px;
+                margin: 20px;
+                background-color: #fff;
                 border-bottom: solid 5px $blue;
+                @include sp {
+                    display: block;
+                    padding: 10px;
+                    margin: 20px;
+                    border: none;
+                }
             }
             &:last-of-type {
                 th {
@@ -29,6 +45,7 @@
                 td {
                     height: 350px;
                     border-bottom: none;
+
                 }
             }
         }

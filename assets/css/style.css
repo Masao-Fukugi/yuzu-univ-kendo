@@ -1513,6 +1513,12 @@ main {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  #contact table {
+    width: 100%;
+  }
+}
+
 #contact table tr {
   border: none;
 }
@@ -1526,9 +1532,28 @@ main {
   vertical-align: top;
 }
 
+@media screen and (max-width: 767px) {
+  #contact table tr th {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+}
+
 #contact table tr td {
-  padding: 20px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #fff;
   border-bottom: solid 5px #202F55;
+}
+
+@media screen and (max-width: 767px) {
+  #contact table tr td {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+  }
 }
 
 #contact table tr:last-of-type th {
