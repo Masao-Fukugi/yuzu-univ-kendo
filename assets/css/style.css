@@ -949,6 +949,13 @@ main {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .page__sbttl {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+}
+
 .topic__list {
   margin-top: 50px;
 }
@@ -1349,6 +1356,12 @@ main {
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  #result .result__menu {
+    width: 100%;
+  }
 }
 
 #result .result__menu::after {
