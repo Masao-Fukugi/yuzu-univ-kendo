@@ -1148,6 +1148,14 @@ main {
 .profile__txt {
   display: block;
   padding: 30px 0 10px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__txt {
+    width: calc(100vw * 0.9 - 120px);
+  }
 }
 
 .profile__txt--first {
@@ -1527,6 +1535,10 @@ main {
 #member .member__name {
   margin-top: 30px;
   text-align: center;
+}
+
+.topSpace {
+  padding-top: 0;
 }
 
 #access .access {

@@ -148,6 +148,11 @@ main {
     &__txt {
         display: block;
         padding: 30px 0 10px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        @include sp {
+            width: calc(100vw * 0.9 - 120px);
+        }
         &--first {
             padding: 0 0 10px;
         }
