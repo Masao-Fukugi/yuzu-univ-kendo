@@ -1026,6 +1026,13 @@ main {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .member__ttl {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+}
+
 .member__photo {
   float: left;
   margin-top: 50px;
@@ -1038,6 +1045,14 @@ main {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .member__photo {
+    float: none;
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
 .profile {
   float: right;
   margin-top: 50px;
@@ -1047,6 +1062,14 @@ main {
 @media screen and (max-width: 1199px) {
   .profile {
     width: calc(100vw * 500 / 1200 * 0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    float: none;
+    margin-top: 30px;
+    width: 100%;
   }
 }
 

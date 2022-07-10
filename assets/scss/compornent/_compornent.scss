@@ -102,6 +102,10 @@ main {
         text-align: center;
         font-size: 36px;
         font-weight: bold;
+        @include sp {
+            margin-top: 30px;
+            font-size: 24px;
+        }
     }
     &__photo {
         float: left;
@@ -109,6 +113,11 @@ main {
         max-width: 500px;
         @include medium {
             width: calc(100vw * 500 / 1200 * 0.9);
+        }
+        @include sp {
+            float: none;
+            margin-top: 30px;
+            width: 100%;
         }
     }
 }
@@ -118,6 +127,11 @@ main {
     max-width: 500px;
     @include medium {
         width: calc(100vw * 500 / 1200 * 0.9);
+    }
+    @include sp {
+        float: none;
+        margin-top: 30px;
+        width: 100%;
     }
     &__row {
         border-bottom: solid 1px #333;
