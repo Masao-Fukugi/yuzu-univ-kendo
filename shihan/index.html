@@ -6,6 +6,7 @@
     <meta name="description" content=""/>
     <link rel="stylesheet" href="/assets/css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,7 +17,7 @@
                 <li class="icon__list"><a class="header__link" href="#"><img src="/assets/img/icon-tw.png" alt="twitterアイコン"></a></li>
                 <li class="icon__list"><a class="header__link" href="#"><img src="/assets/img/icon-fb.png" alt="facebookアイコン"></a></li>
             </ul>
-            <div class="hanburger">
+            <div class="hamburger sp-on">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,7 +32,19 @@
                     <li class="header__list"><a href="/contact/index.html">お問い合わせ</a></li>
                 </ul>
             </nav>
-            <ul class="icon__menu sp-on">
+        </div>
+        <div class="mask mask-on">
+            <nav class="mask__nav">
+                <ul class="mask__menu">
+                    <li class="mask__list"><a href="/topic/index.html"><img class="mask__img" src="/assets/img/news.png" alt="お知らせアイコン">お知らせ</a></li>
+                    <li class="mask__list"><a href="/result/index.html"><img class="mask__img" src="/assets/img/result.png" alt="試合結果アイコン">試合結果</a></li>
+                    <li class="mask__list"><a href="/member/index.html"><img class="mask__img" src="/assets/img/member.png" alt="部員紹介アイコン">部員紹介</a></li>
+                    <li class="mask__list"><a href="/shihan/index.html"><img class="mask__img" src="/assets/img/shihan.png" alt="師範紹介アイコン">師範紹介</a></li>
+                    <li class="mask__list"><a href="/access/index.html"><img class="mask__img" src="/assets/img/access.png" alt="アクセスアイコン">アクセス</a></li>
+                    <li class="mask__list"><a href="/contact/index.html"><img class="mask__img" src="/assets/img/mail.png" alt="問い合わせアイコン">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <ul class="icon__menu hamburger-on">
                 <li class="icon__list"><a class="header__link" href="#"><img src="/assets/img/icon-univ.png" alt="大学アイコン"></a></li>
                 <li class="icon__list"><a class="header__link" href="#"><img src="/assets/img/icon-tw.png" alt="twitterアイコン"></a></li>
                 <li class="icon__list"><a class="header__link" href="#"><img src="/assets/img/icon-fb.png" alt="facebookアイコン"></a></li>
@@ -97,5 +110,6 @@
         </div>
     </footer>
     <script src="/assets/js/font.js"></script>
+    <script src="/assets/js/hamburger.js"></script>
 </body>
 </html>
