@@ -951,7 +951,6 @@ main {
 
 @media screen and (max-width: 767px) {
   .page__sbttl {
-    margin-top: 30px;
     font-size: 24px;
   }
 }
@@ -1476,6 +1475,12 @@ main {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #access .access {
+    width: 100%;
+  }
+}
+
 #access .access__txt {
   margin-top: 30px;
   line-height: 2;
@@ -1487,6 +1492,13 @@ main {
 
 #access .access__txt a:hover {
   color: #F6AD49;
+}
+
+@media screen and (max-width: 767px) {
+  #access iframe {
+    width: 100%;
+    height: calc(100vw * 800 / 1200 * 0.9);
+  }
 }
 
 #contact table {
