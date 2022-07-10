@@ -1428,6 +1428,12 @@ main {
   line-height: 2;
 }
 
+@media screen and (max-width: 767px) {
+  #single-topic .area article p {
+    line-height: 1.5;
+  }
+}
+
 #result .result__menu {
   padding: 20px;
   margin: 30px auto 0;
